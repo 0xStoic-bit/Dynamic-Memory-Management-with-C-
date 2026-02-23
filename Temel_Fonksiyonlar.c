@@ -28,7 +28,7 @@ int main(){
 	//Kontrol ettiğimiz kısım ram de yer yoksa diye.
 	if(ptr == NULL){
 		printf("Sistem Hatası : Bellek ayrilamadi!\n");
-		return 1;
+		return 1; // Hata alındığını simgelemesi için koyduk
 	}
 	// Kullandığımız kısım
 	*ptr = 70;
@@ -39,5 +39,5 @@ int main(){
 	free(ptr);
 	ptr = NULL;
 	
-	return 0;
+	return 0;// program başarı ile sonlandı 
 }
