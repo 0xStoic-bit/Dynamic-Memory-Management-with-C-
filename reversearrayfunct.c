@@ -11,7 +11,7 @@ void reverseArray(int *arr , int size){
 	while(start<end){
 		
 		temp = *start; //start içindeki değeri temp e yedekle
-		start = *end; //end in içindeki değeri startın olduğu yere yaz
+		*start = *end; //end in içindeki değeri startın olduğu yere yaz
 		*end = temp;   //tempteki yedeği end in olduğu yere yaz 
 		
 		start++;
